@@ -179,6 +179,66 @@
       }
     }
   </style>
+  <style>
+    /* seo-faq-v1 */
+    .faq-item{ border:1px solid var(--line); border-radius:12px; background:#FFFFFF; overflow:hidden; }
+    .faq-item + .faq-item{ margin-top:12px; }
+    .faq-item summary{ cursor:pointer; padding:18px 22px; font-weight:700; font-size:16px; color:var(--ink); list-style:none; display:flex; justify-content:space-between; align-items:center; gap:16px; }
+    .faq-item summary::-webkit-details-marker{ display:none; }
+    .faq-item summary::after{ content:"+"; font-size:24px; color:var(--accent); font-weight:400; line-height:1; flex-shrink:0; }
+    .faq-item[open] summary::after{ content:"\2212"; }
+    .faq-item .faq-a{ padding:0 22px 20px; font-size:15px; line-height:1.75; color:var(--muted); }
+    .faq-item .faq-a a{ font-weight:600; }
+  </style>
+  <script type="application/ld+json">
+{
+    "@context":  "https://schema.org",
+    "@type":  "FAQPage",
+    "@id":  "https://whitecapllc.net/garage-doors.html#faq",
+    "mainEntity":  [
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Yes. Whitecap Enterprises handles new garage door installation, full replacements, and repairs, including springs, tracks, rollers, and openers, for homes and businesses across Northern and Central Utah.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "Do you install, replace, and repair garage doors?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Pricing depends on the size of the opening, the door material and style, insulation, and whether new hardware or an opener is needed. We provide a free, upfront estimate so you know the cost before any work begins.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "How much does a new garage door cost?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Most standard garage door installations are completed in a few hours to half a day. More complex jobs or custom doors may take longer, and we will give you a clear timeline with your quote.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "How long does a garage door installation take?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "If the door is older, badly damaged, noisy, or failing often, replacement is usually the better long-term value. For newer doors with a single failed part like a spring or opener, a repair is often all you need. We will give you an honest recommendation.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "Should I repair or replace my garage door?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Yes, every garage door estimate is free and comes with no pressure. Call (385) 541-2333 or request a quote online to schedule.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "Do you offer free garage door estimates?",
+                           "@type":  "Question"
+                       }
+                   ]
+}
+  </script>
 </head>
 <body>
 <div style="width:100%; box-sizing:border-box; min-height:100vh; background:var(--paper); display:flex; flex-direction:column;">
@@ -258,7 +318,21 @@
     </div>
   </section>
 
-  <section style="width:100%; padding:64px 64px; box-sizing:border-box; background:var(--ink); display:flex; flex-direction:column; align-items:center; gap:20px; text-align:center;">
+    <!-- seo-content-v1 -->
+  <section style="width:100%; padding:56px 64px; box-sizing:border-box; background:var(--paper-2); display:flex; justify-content:center;">
+    <div style="width:100%; max-width:820px; display:flex; flex-direction:column; gap:14px;">
+      <div style="text-align:center; margin-bottom:10px; display:flex; flex-direction:column; align-items:center; gap:10px;">
+        <span class="tag">FAQ</span>
+        <h2 style="font-size:26px;">Garage door FAQ</h2>
+      </div>
+      <details class="faq-item"><summary>Do you install, replace, and repair garage doors?</summary><div class="faq-a">Yes. Whitecap Enterprises handles new garage door installation, full replacements, and repairs, including springs, tracks, rollers, and openers, for homes and businesses across Northern and Central Utah.</div></details>
+      <details class="faq-item"><summary>How much does a new garage door cost?</summary><div class="faq-a">Pricing depends on the size of the opening, the door material and style, insulation, and whether new hardware or an opener is needed. We provide a free, upfront estimate so you know the cost before any work begins.</div></details>
+      <details class="faq-item"><summary>How long does a garage door installation take?</summary><div class="faq-a">Most standard garage door installations are completed in a few hours to half a day. More complex jobs or custom doors may take longer, and we will give you a clear timeline with your quote.</div></details>
+      <details class="faq-item"><summary>Should I repair or replace my garage door?</summary><div class="faq-a">If the door is older, badly damaged, noisy, or failing often, replacement is usually the better long-term value. For newer doors with a single failed part like a spring or opener, a repair is often all you need. We will give you an honest recommendation.</div></details>
+      <details class="faq-item"><summary>Do you offer free garage door estimates?</summary><div class="faq-a">Yes, every garage door estimate is free and comes with no pressure. Call (385) 541-2333 or request a quote online to schedule.</div></details>
+    </div>
+  </section>
+<section style="width:100%; padding:64px 64px; box-sizing:border-box; background:var(--ink); display:flex; flex-direction:column; align-items:center; gap:20px; text-align:center;">
     <h2 style="font-size:28px; color:#FFFFFF;">Garage door acting up? Let's fix that.</h2>
     <p style="margin:0; color:#C7C9DA; max-width:520px; font-size:15px;">Most repair calls are scheduled within the week. Call us or request a quote online.</p>
     <div style="display:flex; gap:16px;">

@@ -164,6 +164,66 @@
       }
     }
   </style>
+  <style>
+    /* seo-faq-v1 */
+    .faq-item{ border:1px solid var(--line); border-radius:12px; background:#FFFFFF; overflow:hidden; }
+    .faq-item + .faq-item{ margin-top:12px; }
+    .faq-item summary{ cursor:pointer; padding:18px 22px; font-weight:700; font-size:16px; color:var(--ink); list-style:none; display:flex; justify-content:space-between; align-items:center; gap:16px; }
+    .faq-item summary::-webkit-details-marker{ display:none; }
+    .faq-item summary::after{ content:"+"; font-size:24px; color:var(--accent); font-weight:400; line-height:1; flex-shrink:0; }
+    .faq-item[open] summary::after{ content:"\2212"; }
+    .faq-item .faq-a{ padding:0 22px 20px; font-size:15px; line-height:1.75; color:var(--muted); }
+    .faq-item .faq-a a{ font-weight:600; }
+  </style>
+  <script type="application/ld+json">
+{
+    "@context":  "https://schema.org",
+    "@type":  "FAQPage",
+    "@id":  "https://whitecapllc.net/services.html#faq",
+    "mainEntity":  [
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "We provide two core services: insulation (spray foam, attic, fiberglass, blown-in, and soundproofing) and garage doors (installation, replacement, and repair). Having both trades under one roof means a single, accountable contractor for your project.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "What services does Whitecap Enterprises offer?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Yes. We serve homeowners, landlords, and commercial property owners across Northern and Central Utah, from single-family homes and rentals to shops, sheds, and light commercial buildings.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "Do you work on both homes and businesses?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "We are based in Pleasant Grove and work throughout Utah County and the greater Salt Lake area, including Lehi, American Fork, Provo, Saratoga Springs, Draper, South Jordan, Salt Lake City, and more.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "What areas do you serve?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Yes. Whitecap Enterprises LLC is a fully licensed and insured contractor, so your property and our crew are protected on every job.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "Are you licensed and insured?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Call (385) 541-2333 or request a free quote online. We will talk through your project and provide a clear, no-pressure estimate.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "How do I get a quote?",
+                           "@type":  "Question"
+                       }
+                   ]
+}
+  </script>
 </head>
 <body>
 <div style="width:100%; box-sizing:border-box; min-height:100vh; background:var(--paper); display:flex; flex-direction:column;">
@@ -239,7 +299,21 @@
     </div>
   </section>
 
-  <section style="width:100%; padding:64px 64px; box-sizing:border-box; background:var(--ink); display:flex; flex-direction:column; align-items:center; gap:20px; text-align:center;">
+    <!-- seo-content-v1 -->
+  <section style="width:100%; padding:56px 64px; box-sizing:border-box; background:var(--paper-2); display:flex; justify-content:center;">
+    <div style="width:100%; max-width:820px; display:flex; flex-direction:column; gap:14px;">
+      <div style="text-align:center; margin-bottom:10px; display:flex; flex-direction:column; align-items:center; gap:10px;">
+        <span class="tag">FAQ</span>
+        <h2 style="font-size:26px;">Services FAQ</h2>
+      </div>
+      <details class="faq-item"><summary>What services does Whitecap Enterprises offer?</summary><div class="faq-a">We provide two core services: insulation (spray foam, attic, fiberglass, blown-in, and soundproofing) and garage doors (installation, replacement, and repair). Having both trades under one roof means a single, accountable contractor for your project.</div></details>
+      <details class="faq-item"><summary>Do you work on both homes and businesses?</summary><div class="faq-a">Yes. We serve homeowners, landlords, and commercial property owners across Northern and Central Utah, from single-family homes and rentals to shops, sheds, and light commercial buildings.</div></details>
+      <details class="faq-item"><summary>What areas do you serve?</summary><div class="faq-a">We are based in Pleasant Grove and work throughout Utah County and the greater Salt Lake area, including Lehi, American Fork, Provo, Saratoga Springs, Draper, South Jordan, Salt Lake City, and more.</div></details>
+      <details class="faq-item"><summary>Are you licensed and insured?</summary><div class="faq-a">Yes. Whitecap Enterprises LLC is a fully licensed and insured contractor, so your property and our crew are protected on every job.</div></details>
+      <details class="faq-item"><summary>How do I get a quote?</summary><div class="faq-a">Call (385) 541-2333 or request a free quote online. We will talk through your project and provide a clear, no-pressure estimate.</div></details>
+    </div>
+  </section>
+<section style="width:100%; padding:64px 64px; box-sizing:border-box; background:var(--ink); display:flex; flex-direction:column; align-items:center; gap:20px; text-align:center;">
     <h2 style="font-size:28px; color:#FFFFFF;">Not sure which service you need?</h2>
     <p style="margin:0; color:#C7C9DA; max-width:520px; font-size:15px;">Tell us what's going on and we'll point you in the right direction, no charge for the estimate.</p>
     <a href="quote.html" class="btn btn-primary" style="padding:14px 28px;">Get a Free Quote</a>

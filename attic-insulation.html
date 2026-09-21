@@ -188,6 +188,66 @@
       }
     }
   </style>
+  <style>
+    /* seo-faq-v1 */
+    .faq-item{ border:1px solid var(--line); border-radius:12px; background:#FFFFFF; overflow:hidden; }
+    .faq-item + .faq-item{ margin-top:12px; }
+    .faq-item summary{ cursor:pointer; padding:18px 22px; font-weight:700; font-size:16px; color:var(--ink); list-style:none; display:flex; justify-content:space-between; align-items:center; gap:16px; }
+    .faq-item summary::-webkit-details-marker{ display:none; }
+    .faq-item summary::after{ content:"+"; font-size:24px; color:var(--accent); font-weight:400; line-height:1; flex-shrink:0; }
+    .faq-item[open] summary::after{ content:"\2212"; }
+    .faq-item .faq-a{ padding:0 22px 20px; font-size:15px; line-height:1.75; color:var(--muted); }
+    .faq-item .faq-a a{ font-weight:600; }
+  </style>
+  <script type="application/ld+json">
+{
+    "@context":  "https://schema.org",
+    "@type":  "FAQPage",
+    "@id":  "https://whitecapllc.net/attic-insulation.html#faq",
+    "mainEntity":  [
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Common signs include high energy bills, rooms that never feel the right temperature, ice dams in winter, and being able to see the tops of your ceiling joists. If your insulation looks thin, uneven, or old, it is worth having it checked.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "How do I know if my attic needs more insulation?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "It depends on your attic and budget. Blown-in insulation is excellent for covering an attic floor evenly, while spray foam is ideal when you want to air-seal the roofline. We will recommend the best fit after looking at your space.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "What is the best type of attic insulation?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "For Utah\u0027s climate, attic insulation in the range of R-49 to R-60 is generally recommended. During your free estimate we measure what you have now and let you know how much to add to reach an efficient level.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "How much attic insulation do I need in Utah?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "In most cases, yes. The attic is where a large share of heating and cooling escapes, so bringing it up to the right level is one of the most cost-effective upgrades for year-round comfort and lower bills.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "Will new attic insulation lower my energy bills?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Yes, every estimate is free and no-pressure. Call (385) 541-2333 or request a quote online and we will take a look.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "Do you offer free attic insulation estimates?",
+                           "@type":  "Question"
+                       }
+                   ]
+}
+  </script>
 </head>
 <body>
 <div style="width:100%; box-sizing:border-box; min-height:100vh; background:var(--paper); display:flex; flex-direction:column;">
@@ -271,7 +331,21 @@
     </div>
   </section>
 
-  <section style="width:100%; padding:56px 64px; box-sizing:border-box; background:var(--ink); display:flex; flex-direction:column; align-items:center; gap:20px; text-align:center;">
+    <!-- seo-content-v1 -->
+  <section style="width:100%; padding:56px 64px; box-sizing:border-box; background:var(--paper-2); display:flex; justify-content:center;">
+    <div style="width:100%; max-width:820px; display:flex; flex-direction:column; gap:14px;">
+      <div style="text-align:center; margin-bottom:10px; display:flex; flex-direction:column; align-items:center; gap:10px;">
+        <span class="tag">FAQ</span>
+        <h2 style="font-size:26px;">Attic insulation FAQ</h2>
+      </div>
+      <details class="faq-item"><summary>How do I know if my attic needs more insulation?</summary><div class="faq-a">Common signs include high energy bills, rooms that never feel the right temperature, ice dams in winter, and being able to see the tops of your ceiling joists. If your insulation looks thin, uneven, or old, it is worth having it checked.</div></details>
+      <details class="faq-item"><summary>What is the best type of attic insulation?</summary><div class="faq-a">It depends on your attic and budget. Blown-in insulation is excellent for covering an attic floor evenly, while spray foam is ideal when you want to air-seal the roofline. We will recommend the best fit after looking at your space.</div></details>
+      <details class="faq-item"><summary>How much attic insulation do I need in Utah?</summary><div class="faq-a">For Utah's climate, attic insulation in the range of R-49 to R-60 is generally recommended. During your free estimate we measure what you have now and let you know how much to add to reach an efficient level.</div></details>
+      <details class="faq-item"><summary>Will new attic insulation lower my energy bills?</summary><div class="faq-a">In most cases, yes. The attic is where a large share of heating and cooling escapes, so bringing it up to the right level is one of the most cost-effective upgrades for year-round comfort and lower bills.</div></details>
+      <details class="faq-item"><summary>Do you offer free attic insulation estimates?</summary><div class="faq-a">Yes, every estimate is free and no-pressure. Call (385) 541-2333 or request a quote online and we will take a look.</div></details>
+    </div>
+  </section>
+<section style="width:100%; padding:56px 64px; box-sizing:border-box; background:var(--ink); display:flex; flex-direction:column; align-items:center; gap:20px; text-align:center;">
     <h2 style="font-size:28px; color:#FFFFFF; max-width:640px;">Find out what R-value your attic actually has</h2>
     <p style="margin:0; color:#C7C9DA; max-width:520px; font-size:15px;">A free estimate includes an honest read on your current coverage and what it would take to reach code.</p>
     <a href="quote.html" class="btn btn-primary" style="padding:14px 28px;">Get a Free Quote</a>

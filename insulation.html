@@ -162,6 +162,66 @@
       }
     }
   </style>
+  <style>
+    /* seo-faq-v1 */
+    .faq-item{ border:1px solid var(--line); border-radius:12px; background:#FFFFFF; overflow:hidden; }
+    .faq-item + .faq-item{ margin-top:12px; }
+    .faq-item summary{ cursor:pointer; padding:18px 22px; font-weight:700; font-size:16px; color:var(--ink); list-style:none; display:flex; justify-content:space-between; align-items:center; gap:16px; }
+    .faq-item summary::-webkit-details-marker{ display:none; }
+    .faq-item summary::after{ content:"+"; font-size:24px; color:var(--accent); font-weight:400; line-height:1; flex-shrink:0; }
+    .faq-item[open] summary::after{ content:"\2212"; }
+    .faq-item .faq-a{ padding:0 22px 20px; font-size:15px; line-height:1.75; color:var(--muted); }
+    .faq-item .faq-a a{ font-weight:600; }
+  </style>
+  <script type="application/ld+json">
+{
+    "@context":  "https://schema.org",
+    "@type":  "FAQPage",
+    "@id":  "https://whitecapllc.net/insulation.html#faq",
+    "mainEntity":  [
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "We install spray foam, attic, fiberglass, blown-in, and soundproofing insulation. Each has its own strengths, and we recommend the right material based on the space, your goals, and your budget.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "What types of insulation do you install?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "It depends on where it is going and what you want to achieve, whether that is lower energy bills, better comfort, moisture control, or sound reduction. During a free assessment we look at your property and recommend the best fit.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "Which insulation is best for my home?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Better insulation lowers heating and cooling bills, keeps indoor temperatures more consistent, reduces drafts, and can help with moisture and noise. In Utah\u0027s climate, it is one of the most cost-effective home upgrades available.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "What are the benefits of upgrading my insulation?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Cost depends on the size of the area, the type of insulation, and the condition of what is already there. That is why we always provide a free, no-obligation estimate before any work starts.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "How much does insulation cost?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Yes. Call (385) 541-2333 or request a quote online for a free, no-pressure estimate anywhere in our Northern and Central Utah service area.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "Do you offer free insulation estimates?",
+                           "@type":  "Question"
+                       }
+                   ]
+}
+  </script>
 </head>
 <body>
 <div style="width:100%; box-sizing:border-box; min-height:100vh; background:var(--paper); display:flex; flex-direction:column;">
@@ -277,7 +337,21 @@
     </div>
   </section>
 
-  <section style="width:100%; padding:64px 64px; box-sizing:border-box; background:var(--ink); display:flex; flex-direction:column; align-items:center; gap:20px; text-align:center;">
+    <!-- seo-content-v1 -->
+  <section style="width:100%; padding:56px 64px; box-sizing:border-box; background:var(--paper-2); display:flex; justify-content:center;">
+    <div style="width:100%; max-width:820px; display:flex; flex-direction:column; gap:14px;">
+      <div style="text-align:center; margin-bottom:10px; display:flex; flex-direction:column; align-items:center; gap:10px;">
+        <span class="tag">FAQ</span>
+        <h2 style="font-size:26px;">Insulation FAQ</h2>
+      </div>
+      <details class="faq-item"><summary>What types of insulation do you install?</summary><div class="faq-a">We install spray foam, attic, fiberglass, blown-in, and soundproofing insulation. Each has its own strengths, and we recommend the right material based on the space, your goals, and your budget.</div></details>
+      <details class="faq-item"><summary>Which insulation is best for my home?</summary><div class="faq-a">It depends on where it is going and what you want to achieve, whether that is lower energy bills, better comfort, moisture control, or sound reduction. During a free assessment we look at your property and recommend the best fit.</div></details>
+      <details class="faq-item"><summary>What are the benefits of upgrading my insulation?</summary><div class="faq-a">Better insulation lowers heating and cooling bills, keeps indoor temperatures more consistent, reduces drafts, and can help with moisture and noise. In Utah's climate, it is one of the most cost-effective home upgrades available.</div></details>
+      <details class="faq-item"><summary>How much does insulation cost?</summary><div class="faq-a">Cost depends on the size of the area, the type of insulation, and the condition of what is already there. That is why we always provide a free, no-obligation estimate before any work starts.</div></details>
+      <details class="faq-item"><summary>Do you offer free insulation estimates?</summary><div class="faq-a">Yes. Call (385) 541-2333 or request a quote online for a free, no-pressure estimate anywhere in our Northern and Central Utah service area.</div></details>
+    </div>
+  </section>
+<section style="width:100%; padding:64px 64px; box-sizing:border-box; background:var(--ink); display:flex; flex-direction:column; align-items:center; gap:20px; text-align:center;">
     <h2 style="font-size:28px; color:#FFFFFF;">Not sure which insulation is right for you?</h2>
     <p style="margin:0; color:#C7C9DA; max-width:520px; font-size:15px;">We'll walk your property and recommend what actually makes sense, no guesswork.</p>
     <a href="quote.html" class="btn btn-primary" style="padding:14px 28px;">Get a Free Quote</a>
