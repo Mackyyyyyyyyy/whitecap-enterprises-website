@@ -157,6 +157,17 @@
     }
   </style>
 
+  <style>
+    /* container-layout-v1 : centered content column (like brofoamexperts.com); backgrounds stay full-bleed */
+    @media (min-width: 981px){
+      body > div > header,
+      body > div > section,
+      body > div > footer{
+        padding-left: max(32px, calc((100% - 1200px) / 2)) !important;
+        padding-right: max(32px, calc((100% - 1200px) / 2)) !important;
+      }
+    }
+  </style>
 </head>
 <body>
 <div style="width:100%; box-sizing:border-box; min-height:100vh; background:var(--paper); display:flex; flex-direction:column;">
