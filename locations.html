@@ -218,6 +218,37 @@
       }
     }
   </style>
+  <style>
+    /* seo-faq-v1 */
+    .faq-item{ border:1px solid var(--line); border-radius:12px; background:#FFFFFF; overflow:hidden; }
+    .faq-item + .faq-item{ margin-top:12px; }
+    .faq-item summary{ cursor:pointer; padding:18px 22px; font-weight:700; font-size:16px; color:var(--ink); list-style:none; display:flex; justify-content:space-between; align-items:center; gap:16px; }
+    .faq-item summary::-webkit-details-marker{ display:none; }
+    .faq-item summary::after{ content:"+"; font-size:24px; color:var(--accent); font-weight:400; line-height:1; flex-shrink:0; }
+    .faq-item[open] summary::after{ content:"\2212"; }
+    .faq-item .faq-a{ padding:0 22px 20px; font-size:15px; line-height:1.75; color:var(--muted); }
+    .faq-item .faq-a a{ font-weight:600; }
+    /* gallery-v1 */
+    .wc-gallery figure{ margin:0; }
+    .wc-gallery img{ transition:transform .45s ease; }
+    .wc-gallery figure:hover img{ transform:scale(1.06); }
+    .svc-card{ text-decoration:none; color:var(--ink); transition:all .15s ease; }
+    .svc-card:hover{ transform:translateY(-2px); box-shadow:0 14px 28px -16px rgba(15,18,34,.22); }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://whitecap-enterprises-website.vercel.app/locations.html#faq",
+  "mainEntity": [
+    { "@type": "Question", "name": "What areas does Whitecap Enterprises serve?", "acceptedAnswer": { "@type": "Answer", "text": "We are based in Pleasant Grove and serve Northern and Central Utah, including Pleasant Grove, Lehi, American Fork, Saratoga Springs, Provo, Alpine, Mapleton, Santaquin, Draper, South Jordan, Park City, Heber City, Salt Lake City, and the surrounding communities." } },
+    { "@type": "Question", "name": "Do you charge extra to travel to my city?", "acceptedAnswer": { "@type": "Answer", "text": "In most cases, no. Travel within our regular Northern and Central Utah service area is included. If a project is well outside our usual range, we will let you know upfront before anything is scheduled." } },
+    { "@type": "Question", "name": "Do you serve both homes and businesses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We work with homeowners, landlords, and commercial property owners, from single-family homes and rentals to shops, sheds, and light commercial buildings." } },
+    { "@type": "Question", "name": "Are you licensed and insured?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Whitecap Enterprises LLC is a fully licensed and insured contractor, so your property and our crew are protected on every job." } },
+    { "@type": "Question", "name": "How do I book insulation or garage door service in my area?", "acceptedAnswer": { "@type": "Answer", "text": "Call (385) 541-2333 or request a free quote online. Tell us your city and project, and we will schedule a free estimate at a time that works for you." } }
+  ]
+}
+  </script>
 </head>
 <body>
 <div style="width:100%; box-sizing:border-box; min-height:100vh; background:var(--paper); display:flex; flex-direction:column;">
@@ -264,6 +295,53 @@
     <p style="max-width:640px; font-size:16px; line-height:1.6; color:var(--muted); margin:0;">Based in Pleasant Grove, our crews are on the road across Northern &amp; Central Utah every day. Pick your city below to see how we help homes and businesses near you.</p>
   </section>
 
+  <section style="width:100%; padding:8px 64px 16px; box-sizing:border-box; display:flex; justify-content:center;">
+    <div style="width:100%; max-width:820px; display:flex; flex-direction:column; gap:16px;">
+      <p style="margin:0; font-size:15px; line-height:1.8; color:var(--muted);">Whitecap Enterprises LLC is a licensed and insured insulation contractor and garage door company headquartered in Pleasant Grove, Utah. From the Wasatch Front to the surrounding valleys, our crews help homeowners, landlords, and businesses stay comfortable and energy efficient year-round, whether that means sealing an attic before winter, replacing worn insulation in an older home, or installing a new garage door that finally opens quietly.</p>
+      <p style="margin:0; font-size:15px; line-height:1.8; color:var(--muted);">Utah's climate is demanding: hot, dry summers and cold, snowy winters put real stress on a building's envelope. Homes across Utah County and the greater Salt Lake area, especially older ones, often have thin, settled, or missing insulation and aging garage doors that drive up energy bills and let in drafts. Because we handle both insulation and garage doors with one local team, you get a single accountable contractor who knows the region and shows up when promised.</p>
+    </div>
+  </section>
+
+  <section style="width:100%; padding:48px 64px; box-sizing:border-box; background:var(--paper-2); display:flex; flex-direction:column; align-items:center; gap:30px;">
+    <div style="text-align:center; display:flex; flex-direction:column; align-items:center; gap:10px;">
+      <span class="tag">What We Do</span>
+      <h2 style="font-size:30px;">The same services in every city we serve</h2>
+      <p style="margin:0; max-width:640px; font-size:15px; color:var(--muted);">Our full range of insulation and garage door services is available everywhere our crews travel across Northern &amp; Central Utah.</p>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:20px; width:100%; max-width:1080px;">
+      <a href="spray-foam-insulation.html" class="card svc-card" style="padding:24px; display:flex; flex-direction:column; gap:8px;">
+        <h3 style="font-size:17px;">Spray Foam Insulation</h3>
+        <p style="margin:0; font-size:14px; color:var(--muted); line-height:1.6;">Expanding foam that seals air leaks in attics, crawl spaces, rim joists, and metal buildings.</p>
+        <span style="font-weight:700; font-size:14px; color:var(--accent);">Learn more &rarr;</span>
+      </a>
+      <a href="attic-insulation.html" class="card svc-card" style="padding:24px; display:flex; flex-direction:column; gap:8px;">
+        <h3 style="font-size:17px;">Attic Insulation</h3>
+        <p style="margin:0; font-size:14px; color:var(--muted); line-height:1.6;">Top up or replace attic insulation to cut energy loss and keep indoor temperatures even.</p>
+        <span style="font-weight:700; font-size:14px; color:var(--accent);">Learn more &rarr;</span>
+      </a>
+      <a href="fiberglass-insulation.html" class="card svc-card" style="padding:24px; display:flex; flex-direction:column; gap:8px;">
+        <h3 style="font-size:17px;">Fiberglass Insulation</h3>
+        <p style="margin:0; font-size:14px; color:var(--muted); line-height:1.6;">Cost-effective batt and wall insulation, installed with no gaps or compression.</p>
+        <span style="font-weight:700; font-size:14px; color:var(--accent);">Learn more &rarr;</span>
+      </a>
+      <a href="blown-in-insulation.html" class="card svc-card" style="padding:24px; display:flex; flex-direction:column; gap:8px;">
+        <h3 style="font-size:17px;">Blown-In Insulation</h3>
+        <p style="margin:0; font-size:14px; color:var(--muted); line-height:1.6;">Loose-fill cellulose and fiberglass that fills attics and hard-to-reach spaces evenly.</p>
+        <span style="font-weight:700; font-size:14px; color:var(--accent);">Learn more &rarr;</span>
+      </a>
+      <a href="soundproofing-insulation.html" class="card svc-card" style="padding:24px; display:flex; flex-direction:column; gap:8px;">
+        <h3 style="font-size:17px;">Soundproofing Insulation</h3>
+        <p style="margin:0; font-size:14px; color:var(--muted); line-height:1.6;">Dense insulation that reduces noise between rooms, floors, and shared walls.</p>
+        <span style="font-weight:700; font-size:14px; color:var(--accent);">Learn more &rarr;</span>
+      </a>
+      <a href="garage-doors.html" class="card svc-card" style="padding:24px; display:flex; flex-direction:column; gap:8px;">
+        <h3 style="font-size:17px;">Garage Doors</h3>
+        <p style="margin:0; font-size:14px; color:var(--muted); line-height:1.6;">Installation, replacement, and repair, including springs, tracks, rollers, and openers.</p>
+        <span style="font-weight:700; font-size:14px; color:var(--accent);">Learn more &rarr;</span>
+      </a>
+    </div>
+  </section>
+
   <section style="width:100%; padding:16px 64px 64px; box-sizing:border-box; display:flex; justify-content:center;">
     <div style="width:100%; max-width:1000px; display:flex; flex-direction:column; align-items:center; gap:6px; text-align:center;">
       <span class="tag">Your Local Experts</span>
@@ -285,6 +363,72 @@
         <a href="salt-lake-city.html" style="display:flex; align-items:center; gap:10px; padding:10px 0; font-size:16px; font-weight:600;"><span style="color:var(--accent); font-weight:800;">&raquo;</span>Salt Lake City</a>
         <span style="display:flex; align-items:center; gap:10px; padding:10px 0; font-size:16px; font-weight:600; color:var(--ink);"><span style="color:var(--accent); font-weight:800;">&raquo;</span>And Beyond</span>
       </div>
+    </div>
+  </section>
+
+  <section style="width:100%; padding:8px 64px 56px; box-sizing:border-box; display:flex; justify-content:center;">
+    <div style="width:100%; max-width:1000px; display:flex; flex-direction:column; align-items:center; gap:16px;">
+      <div style="text-align:center; display:flex; flex-direction:column; align-items:center; gap:10px;">
+        <span class="tag">Coverage</span>
+        <h2 style="font-size:26px;">Our Utah service area</h2>
+      </div>
+      <div style="width:100%; border-radius:14px; overflow:hidden; border:1px solid var(--line); box-shadow:0 14px 28px -18px rgba(15,18,34,.25);">
+        <iframe src="https://maps.google.com/maps?width=100%25&amp;height=440&amp;hl=en&amp;q=Pleasant%20Grove%2C%20UT&amp;t=&amp;z=9&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" style="width:100%; height:440px; border:0; display:block;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Whitecap Enterprises Utah service area map"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section style="width:100%; padding:56px 64px; box-sizing:border-box; background:var(--paper-2); display:flex; flex-direction:column; align-items:center; gap:36px;">
+    <div style="text-align:center; display:flex; flex-direction:column; align-items:center; gap:10px;">
+      <span class="tag">Local Experts</span>
+      <h2 style="font-size:28px;">Why Utah homeowners choose Whitecap</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:28px; width:100%; max-width:1000px;">
+      <div style="display:flex; flex-direction:column; gap:12px; text-align:center; align-items:center;">
+        <div style="width:44px; height:44px; border-radius:999px; background:var(--accent-soft); display:flex; align-items:center; justify-content:center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"></path></svg></div>
+        <h3 style="font-size:18px;">Local Utah crews</h3>
+        <p style="margin:0; font-size:14px; color:var(--muted); line-height:1.6; max-width:300px;">Based in Pleasant Grove, we know Utah's homes, weather, and the way local buildings are put together.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:12px; text-align:center; align-items:center;">
+        <div style="width:44px; height:44px; border-radius:999px; background:var(--accent-soft); display:flex; align-items:center; justify-content:center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"></path></svg></div>
+        <h3 style="font-size:18px;">Two trades, one team</h3>
+        <p style="margin:0; font-size:14px; color:var(--muted); line-height:1.6; max-width:300px;">Insulation and garage doors handled by a single licensed, insured contractor, so nothing falls through the cracks.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:12px; text-align:center; align-items:center;">
+        <div style="width:44px; height:44px; border-radius:999px; background:var(--accent-soft); display:flex; align-items:center; justify-content:center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"></path></svg></div>
+        <h3 style="font-size:18px;">Free, honest estimates</h3>
+        <p style="margin:0; font-size:14px; color:var(--muted); line-height:1.6; max-width:300px;">A clear recommendation for your property, with no pressure and no surprise upsells.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="width:100%; padding:56px 64px; box-sizing:border-box; display:flex; flex-direction:column; align-items:center; gap:30px;">
+    <div style="text-align:center; display:flex; flex-direction:column; align-items:center; gap:10px;">
+      <span class="tag">Our Work</span>
+      <h2 style="font-size:28px;">Recent projects across Utah</h2>
+      <p style="margin:0; max-width:620px; font-size:15px; color:var(--muted);">A sample of insulation and garage door work completed for homes and businesses in our service area.</p>
+    </div>
+    <div class="wc-gallery" style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:20px; width:100%; max-width:1100px;">
+      <figure style="border-radius:14px; overflow:hidden; border:1px solid var(--line); background:#FFFFFF;"><img loading="lazy" decoding="async" src="images/fiberglass-batts.jpg" alt="Fiberglass batt insulation installed in a wall cavity" style="width:100%; height:240px; object-fit:cover; display:block;"><figcaption style="padding:12px 14px; font-size:13px; color:var(--muted);">Fiberglass batts: wall cavity</figcaption></figure>
+      <figure style="border-radius:14px; overflow:hidden; border:1px solid var(--line); background:#FFFFFF;"><img loading="lazy" decoding="async" src="images/gd.jpg" alt="New garage door installation" style="width:100%; height:240px; object-fit:cover; display:block;"><figcaption style="padding:12px 14px; font-size:13px; color:var(--muted);">New garage door install</figcaption></figure>
+      <figure style="border-radius:14px; overflow:hidden; border:1px solid var(--line); background:#FFFFFF;"><img loading="lazy" decoding="async" src="images/cellulose-3.jpg" alt="Cellulose insulation used for an attic retrofit" style="width:100%; height:240px; object-fit:cover; display:block;"><figcaption style="padding:12px 14px; font-size:13px; color:var(--muted);">Cellulose: attic retrofit</figcaption></figure>
+      <figure style="border-radius:14px; overflow:hidden; border:1px solid var(--line); background:#FFFFFF;"><img loading="lazy" decoding="async" src="images/catalina-gd-7.jpg" alt="New garage door installed at a Catalina Bay home" style="width:100%; height:240px; object-fit:cover; display:block;"><figcaption style="padding:12px 14px; font-size:13px; color:var(--muted);">New install: Catalina Bay</figcaption></figure>
+      <figure style="border-radius:14px; overflow:hidden; border:1px solid var(--line); background:#FFFFFF;"><img loading="lazy" decoding="async" src="images/spray-foam-shed-3.jpg" alt="Spray foam insulation applied inside a metal shed" style="width:100%; height:240px; object-fit:cover; display:block;"><figcaption style="padding:12px 14px; font-size:13px; color:var(--muted);">Spray foam: shed interior</figcaption></figure>
+      <figure style="border-radius:14px; overflow:hidden; border:1px solid var(--line); background:#FFFFFF;"><img loading="lazy" decoding="async" src="images/insulation-500.jpg" alt="Blown-in insulation project" style="width:100%; height:240px; object-fit:cover; display:block;"><figcaption style="padding:12px 14px; font-size:13px; color:var(--muted);">Blown-in insulation</figcaption></figure>
+    </div>
+  </section>
+
+  <section style="width:100%; padding:56px 64px; box-sizing:border-box; background:var(--paper-2); display:flex; justify-content:center;">
+    <div style="width:100%; max-width:820px; display:flex; flex-direction:column; gap:14px;">
+      <div style="text-align:center; margin-bottom:10px; display:flex; flex-direction:column; align-items:center; gap:10px;">
+        <span class="tag">FAQ</span>
+        <h2 style="font-size:26px;">Service area FAQ</h2>
+      </div>
+      <details class="faq-item"><summary>What areas does Whitecap Enterprises serve?</summary><div class="faq-a">We're based in Pleasant Grove and serve Northern &amp; Central Utah, including Pleasant Grove, Lehi, American Fork, Saratoga Springs, Provo, Alpine, Mapleton, Santaquin, Draper, South Jordan, Park City, Heber City, Salt Lake City, and the surrounding communities.</div></details>
+      <details class="faq-item"><summary>Do you charge extra to travel to my city?</summary><div class="faq-a">In most cases, no. Travel within our regular Northern &amp; Central Utah service area is included. If a project is well outside our usual range, we'll let you know upfront before anything is scheduled.</div></details>
+      <details class="faq-item"><summary>Do you serve both homes and businesses?</summary><div class="faq-a">Yes. We work with homeowners, landlords, and commercial property owners, from single-family homes and rentals to shops, sheds, and light commercial buildings.</div></details>
+      <details class="faq-item"><summary>Are you licensed and insured?</summary><div class="faq-a">Yes. Whitecap Enterprises LLC is a fully licensed and insured contractor, so your property and our crew are protected on every job.</div></details>
+      <details class="faq-item"><summary>How do I book service in my area?</summary><div class="faq-a">Call <a href="tel:+13855412333">(385) 541-2333</a> or <a href="quote.html">request a free quote</a> online. Tell us your city and project, and we'll schedule a free estimate at a time that works for you.</div></details>
     </div>
   </section>
 
