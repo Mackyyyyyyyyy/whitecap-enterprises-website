@@ -132,6 +132,33 @@
       }
     }
   </style>
+  <style>
+    /* anim-v1 : gentle fade-up reveal on scroll (skips hero for fast LCP) */
+    @media (prefers-reduced-motion: no-preference){
+      html.js-anim body > div > section:not(:first-of-type) > *,
+      html.js-anim body > div > footer > *{
+        opacity:0; transform:translateY(26px);
+        transition:opacity .7s cubic-bezier(.2,.6,.2,1), transform .7s cubic-bezier(.2,.6,.2,1);
+      }
+      html.js-anim .reveal-in{ opacity:1 !important; transform:none !important; }
+    }
+  </style>
+  <script>
+    document.documentElement.className += ' js-anim';
+    (function(){
+      var SEL = 'body > div > section:not(:first-of-type) > *, body > div > footer > *';
+      function showAll(){ try{ document.querySelectorAll(SEL).forEach(function(el){ el.classList.add('reveal-in'); }); }catch(e){} }
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      document.addEventListener('DOMContentLoaded', function(){
+        if(reduce || !('IntersectionObserver' in window)){ showAll(); return; }
+        try{
+          var io = new IntersectionObserver(function(entries){ entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('reveal-in'); io.unobserve(e.target); } }); }, { rootMargin:'0px 0px -8% 0px', threshold:0.06 });
+          document.querySelectorAll(SEL).forEach(function(el){ io.observe(el); });
+          setTimeout(showAll, 2500);
+        }catch(e){ showAll(); }
+      });
+    })();
+  </script>
 </head>
 <body>
 <div style="width:100%; box-sizing:border-box; min-height:100vh; background:var(--paper); display:flex; flex-direction:column;">
